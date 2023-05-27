@@ -1,0 +1,68 @@
+import type { ComponentStory, ComponentMeta } from '@storybook/react';
+import { useState } from 'react';
+import { PageChangeParameters } from '../ipage-change-params';
+import { PaginationButtons } from './pagination-buttons';
+
+const totalPosts = 124;
+const postsPerPage = 4;
+
+const Story: ComponentMeta<typeof PaginationButtons> = {
+  component: PaginationButtons,
+  title: 'Components/Pagination/Pagination Buttons',
+  argTypes: {
+    currentPage: {
+      options: null,
+      description: 'The selected page in the paginator',
+    },
+    totalPosts: {
+      description: 'Amount of results received',
+    },
+    pagesLimit: {
+      description:
+        'Number of pages that will be shown as a normal paginator before collapsing into an ellipsis one',
+    },
+    ellipsisRange: {
+      description:
+        'Number of buttons shown that represent a page in both sides of the ellipsis paginator. It must be higher than 1, and is recommended to use a max value of 5 for this property ',
+    },
+    showSelectedOnLeftUntil: {
+      description:
+        'The ellipsis paginator will show the selected page on its left side if the corresponding number is lower than this property, if it is not, it will show the selected page on its right side. This property cannot be equal or lower than the ellipsis range, and higher or 3 pages close to the final one, otherwise it will be equal to the half of the amount of pages',
+    },
+    onPageChange: {
+      description:
+        'Method that will be executed once a page is selected (and state changes)',
+    },
+    postsPerPage: {
+      description: 'Number of results that will be shown per page',
+    },
+  },
+};
+export default Story;
+
+const onPageChange = ({ currentPage }: { currentPage: number }) => {
+  console.log(`Enviando petición a API con la página  ${currentPage}`);
+};
+
+const Template: ComponentStory<typeof PaginationButtons> = (args) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const onPageChange = ({ currentPage }: PageChangeParameters) => {
+    console.log(`Sending information to API with page ${currentPage}`);
+    setCurrentPage(currentPage);
+  };
+  return (
+    <PaginationButtons
+      {...args}
+      currentPage={currentPage}
+      onPageChange={onPageChange}
+    />
+  );
+};
+
+export const Normal = Template.bind({});
+
+Normal.args = {
+  totalPosts: totalPosts,
+  postsPerPage: postsPerPage,
+  onPageChange: onPageChange,
+};

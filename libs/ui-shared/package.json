@@ -1,0 +1,7 @@
+{
+  "name": "ui-shared",
+  "version": "1.0.0",
+  "scripts": {
+    "generate-icons": "npx @svgr/cli --out-dir ./src/lib/icon-svg -- ./src/lib/icon-svg/assets"
+  }
+}

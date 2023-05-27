@@ -1,0 +1,475 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "3f47835b-6a5e-41c3-b127-b2d934f4a59b",
+      "uid": "0-3f47835b-6a5e-41c3-b127-b2d934f4a59b",
+      "name": "Portfolio",
+      "description": null,
+      "auth": null,
+      "events": null,
+      "variables": [],
+      "order": ["079c8ecc-284d-4e77-aa47-dac22ca19aaf"],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "createdAt": "2023-02-08T18:25:54.691Z",
+      "folders": [],
+      "requests": [
+        {
+          "id": "079c8ecc-284d-4e77-aa47-dac22ca19aaf",
+          "uid": "0-079c8ecc-284d-4e77-aa47-dac22ca19aaf",
+          "name": "Get All",
+          "url": "{{host}}/api/portfolio",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "3f47835b-6a5e-41c3-b127-b2d934f4a59b",
+          "headers": "",
+          "pathVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "558c63ef-e47b-482f-b545-a663deb7a1e3",
+      "uid": "0-558c63ef-e47b-482f-b545-a663deb7a1e3",
+      "name": "KeyPeople",
+      "description": null,
+      "auth": null,
+      "events": null,
+      "variables": [],
+      "order": [
+        "fb355512-0ecf-49a4-83ce-c6b2066b35e8",
+        "7db7e3ed-0b5c-4fde-8cfd-b816ff07ef8a",
+        "eebcec1d-1b49-4636-ad10-e71f46b41f0e"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "createdAt": "2023-02-08T18:25:54.840Z",
+      "folders": [],
+      "requests": [
+        {
+          "id": "7db7e3ed-0b5c-4fde-8cfd-b816ff07ef8a",
+          "uid": "0-7db7e3ed-0b5c-4fde-8cfd-b816ff07ef8a",
+          "name": "Create",
+          "url": "{{host}}/api/keypeople",
+          "description": null,
+          "data": [],
+          "dataOptions": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "dataMode": "raw",
+          "headerData": [],
+          "method": "POST",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "558c63ef-e47b-482f-b545-a663deb7a1e3",
+          "rawModeData": "{\n    \"id\": \"a60b831a-d782-4390-a35b-519af3293590\",\n    \"name\": \"John Constantine\",\n    \"email\": \"john.constantine@perficient.com\",\n    \"role\": \"Master of the dark Arts\"\n}",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "eebcec1d-1b49-4636-ad10-e71f46b41f0e",
+          "uid": "0-eebcec1d-1b49-4636-ad10-e71f46b41f0e",
+          "name": "Remove",
+          "url": "{{host}}/api/keypeople/a60b831a-d782-4390-a35b-519af3293590",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "DELETE",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "558c63ef-e47b-482f-b545-a663deb7a1e3",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "fb355512-0ecf-49a4-83ce-c6b2066b35e8",
+          "uid": "0-fb355512-0ecf-49a4-83ce-c6b2066b35e8",
+          "name": "Get All",
+          "url": "{{host}}/api/keypeople",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "558c63ef-e47b-482f-b545-a663deb7a1e3",
+          "headers": "",
+          "pathVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "62d3dc2c-cd3f-4698-a755-696228ff42a8",
+      "uid": "0-62d3dc2c-cd3f-4698-a755-696228ff42a8",
+      "name": "BuOwner",
+      "description": null,
+      "auth": null,
+      "events": null,
+      "variables": [],
+      "order": ["8edd7cb9-ab4e-4f62-bdd0-6da267d58e84"],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "createdAt": "2023-02-08T18:25:55.177Z",
+      "folders": [],
+      "requests": [
+        {
+          "id": "8edd7cb9-ab4e-4f62-bdd0-6da267d58e84",
+          "uid": "0-8edd7cb9-ab4e-4f62-bdd0-6da267d58e84",
+          "name": "Get All",
+          "url": "{{host}}/api/buowner",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "62d3dc2c-cd3f-4698-a755-696228ff42a8",
+          "headers": "",
+          "pathVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+      "uid": "0-b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+      "name": "Accounts",
+      "description": null,
+      "auth": null,
+      "events": null,
+      "variables": [],
+      "order": [
+        "5abf20cd-a121-464d-b2e7-a7527e8d66d1",
+        "2346eda0-2f34-416c-ab93-b8f0f8d91583",
+        "dfc56d09-e23e-4386-b4ff-76576692b389",
+        "0f3bc91c-2759-4dad-b0a9-24564792073b",
+        "d6d95546-12bb-4da7-a3fb-2d20941b07ad"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "createdAt": "2023-02-08T18:25:54.948Z",
+      "folders": [],
+      "requests": [
+        {
+          "id": "0f3bc91c-2759-4dad-b0a9-24564792073b",
+          "uid": "0-0f3bc91c-2759-4dad-b0a9-24564792073b",
+          "name": "Create",
+          "url": "{{host}}/api/accounts",
+          "description": null,
+          "data": [],
+          "dataOptions": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "dataMode": "raw",
+          "headerData": [],
+          "method": "POST",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+          "rawModeData": "{\n    \"id\": \"a60b831a-d782-4390-a35b-519af3293590\",\n    \"name\": \"perficient\",\n    \"status\": \"active\",\n    \"buOwner\": {\n        \"id\": \"c83e3eca-98d0-49b4-9c17-cc8d9dca04d1\",\n        \"name\": \"Colombia\"\n    },\n    \"portfolio\": {\n        \"id\": \"7a18c0af-e57e-45d7-b74c-1d5e671db52b\",\n        \"name\": \"Assurant\"\n    },\n    \"salesforceLink\": \"https://www.youtube.com/watch?v=hTWKbfoikeg\",\n    \"pcsLink\": \"https://nearshore.perficient.com/careers\",\n    \"strategy\": \"Solamente quiero amarte Y todo mi calor brindarte. Te haré olvidar esa penas que te hacen mal. Hay que dar el sentimiento y cada momento vivirlo. Te haré olvidar esas penas que te hacen mal, Con el amor se puede siempre alcanzar lo mejor, con el amor Los sueños que tengas se van a cumplir. Si tu lo deseas puedes volar Solo tienes que confiar Mucho en ti y seguir. Puedes contar conmigo te doy todo mi apoyo. Si tu lo deseas puedes volar. Si tu quieres el cielo alcanzar y las estrellas tocar ¡Digimon!\"\n}",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "2346eda0-2f34-416c-ab93-b8f0f8d91583",
+          "uid": "0-2346eda0-2f34-416c-ab93-b8f0f8d91583",
+          "name": "Find By Id",
+          "url": "{{host}}/api/accounts/38824b75-7370-4840-afb7-a64e06674495",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "5abf20cd-a121-464d-b2e7-a7527e8d66d1",
+          "uid": "0-5abf20cd-a121-464d-b2e7-a7527e8d66d1",
+          "name": "Get All",
+          "url": "{{host}}/api/accounts",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "d6d95546-12bb-4da7-a3fb-2d20941b07ad",
+          "uid": "0-d6d95546-12bb-4da7-a3fb-2d20941b07ad",
+          "name": "Update",
+          "url": "{{host}}/api/accounts/a60b831a-d782-4390-a35b-519af3293590",
+          "description": null,
+          "data": [],
+          "dataOptions": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "dataMode": "raw",
+          "headerData": [],
+          "method": "PUT",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+          "rawModeData": "{\n    \"name\": \"perficient\",\n    \"status\": \"active\",\n    \"buOwner\": {\n        \"id\": \"c83e3eca-98d0-49b4-9c17-cc8d9dca04d1\",\n        \"name\": \"Colombia\"\n    },\n    \"portfolio\": {\n        \"id\": \"7a18c0af-e57e-45d7-b74c-1d5e671db52b\",\n        \"name\": \"Assurant\"\n    },\n    \"salesforceLink\": \"https://www.youtube.com/watch?v=hTWKbfoikeg\",\n    \"pcsLink\": \"https://nearshore.perficient.com/careers\",\n    \"strategy\": \"Solamente quiero amarte Y todo mi calor brindarte. Te haré olvidar esa penas que te hacen mal. Hay que dar el sentimiento y cada momento vivirlo. Te haré olvidar esas penas que te hacen mal, Con el amor se puede siempre alcanzar lo mejor, con el amor Los sueños que tengas se van a cumplir. Si tu lo deseas puedes volar Solo tienes que confiar Mucho en ti y seguir. Puedes contar conmigo te doy todo mi apoyo. Si tu lo deseas puedes volar. Si tu quieres el cielo alcanzar y las estrellas tocar ¡Digimon!\"\n}",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "dfc56d09-e23e-4386-b4ff-76576692b389",
+          "uid": "0-dfc56d09-e23e-4386-b4ff-76576692b389",
+          "name": "Find By Id Name",
+          "url": "{{host}}/api/accounts/perficient",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "b9d25ad6-644f-4654-b00b-1dd2ef4ea95c",
+          "headers": "",
+          "pathVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "e0165058-2b8a-4683-b3e0-c08872d957eb",
+      "uid": "0-e0165058-2b8a-4683-b3e0-c08872d957eb",
+      "name": "AccountKeyPeople",
+      "description": null,
+      "auth": null,
+      "events": null,
+      "variables": [],
+      "order": [
+        "a674c01b-6da6-427e-83f8-2d1c98f6d689",
+        "6e50c6ec-330a-4ba0-9e1d-1018ed904421",
+        "f9c1b326-5aa7-4415-bf63-7f9a247b1d1b"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "createdAt": "2023-02-08T18:25:55.059Z",
+      "folders": [],
+      "requests": [
+        {
+          "id": "6e50c6ec-330a-4ba0-9e1d-1018ed904421",
+          "uid": "0-6e50c6ec-330a-4ba0-9e1d-1018ed904421",
+          "name": "Bind Key People To Account",
+          "url": "{{host}}/api/accounts/a60b831a-d782-4390-a35b-519af3293593/keypeople/b60b831a-d782-4390-a36b-519af3293583",
+          "description": null,
+          "data": [],
+          "dataOptions": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "dataMode": "raw",
+          "headerData": [],
+          "method": "POST",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "e0165058-2b8a-4683-b3e0-c08872d957eb",
+          "rawModeData": "{\n    \"notes\":\"He is importan because possesses the powers of flight, superhuman strength, x-ray vision, heat vision, cold breath, super-speed, enhanced hearing, and nigh-invulnerability\"\n}",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "a674c01b-6da6-427e-83f8-2d1c98f6d689",
+          "uid": "0-a674c01b-6da6-427e-83f8-2d1c98f6d689",
+          "name": "Get Key People By Account Id",
+          "url": "{{host}}/api/accounts/a60b831a-d782-4390-a35b-519af3293593/keypeople",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "e0165058-2b8a-4683-b3e0-c08872d957eb",
+          "headers": "",
+          "pathVariables": {}
+        },
+        {
+          "id": "f9c1b326-5aa7-4415-bf63-7f9a247b1d1b",
+          "uid": "0-f9c1b326-5aa7-4415-bf63-7f9a247b1d1b",
+          "name": "Unbind Key People and Account",
+          "url": "{{host}}/api/accounts/a60b831a-d782-4390-a35b-519af3293593/keypeople/b60b831a-d782-4390-a36b-519af3293583",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": [],
+          "method": "DELETE",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "responses_order": [],
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "e0165058-2b8a-4683-b3e0-c08872d957eb",
+          "headers": "",
+          "pathVariables": {}
+        }
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "id": "05c980fe-f9e2-4f0a-b202-0cc1552b6908",
+      "name": "Production",
+      "values": [
+        {
+          "key": "host",
+          "value": "http://localhost:3333",
+          "type": "default",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "2696cd76-42d5-41bb-8220-e11cb0a81cd1",
+      "name": "Development",
+      "values": [
+        {
+          "key": "host",
+          "value": "http://localhost:3333",
+          "type": "default",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "33fb6867-02e2-47e3-9321-30e1d098d633",
+      "name": "Local",
+      "values": [
+        {
+          "key": "host",
+          "value": "http://localhost:3333",
+          "type": "default",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "e2ad2971-5c8f-40e2-81fd-ad9af1534292",
+      "name": "QA",
+      "values": [
+        {
+          "key": "host",
+          "value": "http://localhost:3333",
+          "type": "default",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "70f569c2-5bd0-44d0-b582-67ed3bf11df3",
+      "name": "My Workspace - globals",
+      "values": []
+    }
+  ],
+  "headerPresets": [],
+  "globals": []
+}

@@ -1,0 +1,58 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@delia/backend": ["libs/backend/src/index.ts"],
+      "@delia/backend/accounts": [
+        "libs/backend/src/lib/Context/Accounts/index.ts"
+      ],
+      "@delia/backend/accounts-key-people": [
+        "libs/backend/src/lib/Context/accountKeyPeople/index.ts"
+      ],
+      "@delia/backend/auth": ["libs/backend/src/lib/Context/Auth/index.ts"],
+      "@delia/backend/bu-owner": [
+        "libs/backend/src/lib/Context/BuOwner/index.ts"
+      ],
+      "@delia/backend/gut": ["libs/backend/src/lib/Context/Gut/index.ts"],
+      "@delia/backend/key-people": [
+        "libs/backend/src/lib/Context/KeyPeople/index.ts"
+      ],
+      "@delia/backend/plan": ["libs/backend/src/lib/Context/Plans/index.ts"],
+      "@delia/backend/portfolio": [
+        "libs/backend/src/lib/Context/Portfolio/index.ts"
+      ],
+      "@delia/backend/process": [
+        "libs/backend/src/lib/Context/Processes/index.ts"
+      ],
+      "@delia/backend/project": [
+        "libs/backend/src/lib/Context/Projects/index.ts"
+      ],
+      "@delia/backend/qa": ["libs/backend/src/lib/Context/QA/index.ts"],
+      "@delia/backend/shared": ["libs/backend/src/lib/Context/Shared/index.ts"],
+      "@delia/backend/team": ["libs/backend/src/lib/Context/Teams/index.ts"],
+      "@delia/frontend/core": ["libs/frontend/core/src/index.ts"],
+      "@delia/frontend/feature-accounts": [
+        "libs/frontend/feature-accounts/src/index.ts"
+      ],
+      "@delia/frontend/feature-projects": [
+        "libs/frontend/feature-projects/src/index.ts"
+      ],
+      "@delia/mock-api": ["libs/mock-api/src/index.ts"],
+      "@delia/ui-shared": ["libs/ui-shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
